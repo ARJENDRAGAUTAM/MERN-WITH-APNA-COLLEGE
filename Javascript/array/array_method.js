@@ -71,15 +71,35 @@ let AllColors = [ "violet", "orange", "green", "blue", "yellow", "red" ]
 //9-use of slice method########################
 //[ 'violet', 'orange', 'green', 'blue', 'yellow', 'red' ]
 let Slice1 = AllColors.slice();
-console.log(Slice1);
+// console.log(Slice1);
 //expected output:[ 'violet', 'orange', 'green', 'blue', 'yellow', 'red' ]
 let Slice2 = AllColors.slice(1,3);
-console.log(Slice2);
+// console.log(Slice2);
 //expected output:["orange","green"]
 let Slice3 = AllColors.slice(-1);
-console.log(Slice3);
+// console.log(Slice3);
 //expected output:["red"]
 let Slice4 = AllColors.slice(-1,-4);
-console.log(Slice4);
+// console.log(Slice4);
 //expected output:[]
+//use of splice###################
+//arr.splice(start,deleteElement,addElement("a","b","c"))
+let fruits = ["apple","banana","grapes","melon","litchi"];
+let useSplice = fruits.splice();
+// console.log(useSplice);
+//expected output:[]
+// console.log(fruits);
+//expected output:[ 'apple', 'banana', 'grapes', 'melon', 'litchi' ]
+let useSplice2 = fruits.splice(0,1);
+// console.log(useSplice2);
+//expected output:['apple']
+// console.log(fruits);
+//expected output:['banana','grapes','melon','litchi'];
+let useSplice3 = fruits.splice(0,1,"pineapple","straberry");
+// console.log(useSplice3);
+//expected output:['banana']
+// console.log(fruits)
+//expected output:['pineapple','straberry','grapes','melon','litchi'];
+
+
 
