@@ -100,6 +100,28 @@ let useSplice3 = fruits.splice(0,1,"pineapple","straberry");
 //expected output:['banana']
 // console.log(fruits)
 //expected output:['pineapple','straberry','grapes','melon','litchi'];
+// Practice Q-1-- for given start state of an array, change it to final from using splice
+// start-['jan','july','march','aug']
+// final-['july','june','march','aug']
+let months2 = ['jan','july','march','aug'];
+let CheckSplice = months2.splice(0,2,"july","june")
+// console.log(CheckSplice);
+// Q-2--Return the index of the "javascript" from the given array, if it was reversed.
+let lang = ['c','c++','html','javascript','python','java','c#']
+lang.push("sql");
+// console.log(lang)
+let ReverseCheck = lang.reverse().indexOf("javascript");
+// console.log(ReverseCheck)
+// Practice Q1- tic tac toe game
+let game = [['X','null','O'],['null','X','null'],['O','null','X']];
+game[0][1] = "O";
+console.log(game);
+
+
+
+
+
+
 
 
 
