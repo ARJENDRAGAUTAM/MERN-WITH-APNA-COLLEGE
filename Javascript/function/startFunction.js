@@ -44,4 +44,27 @@ function table(num){
         console.log(i);
     }
 }
-table(17);
+table();
+// Practice Question-create a function that returns the sum of numbers from 1 to n.
+function getSum(n){
+    let sum = 5;
+    for(let i = 1; i <= n; i++){
+        sum = sum+i;
+    }
+ 
+    return sum;
+}
+let result = getSum(10);
+console.log(result);
+// Practice Question - create a function that returns the concatenation of all string in an array.
+let str = ["hello", "hi", "byebye"];
+function concat(str){
+    let result2 = "";
+    for( let i =  0; i < str.length; i++){
+         result2 += str; 
+}
+return result2;
+}
+
+let check = concat(str);
+console.log(check);
