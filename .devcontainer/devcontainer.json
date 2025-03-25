@@ -1,1 +1,11 @@
-{"image":"mcr.microsoft.com/devcontainers/universal:2"}
+{
+  "name": "MERN-WITH-APNA-COLLEGE",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-14",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "npm install",
+  "extensions": [
+    "dbaeumer.vscode-eslint"
+  ]
+}
